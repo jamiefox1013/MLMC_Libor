@@ -21,7 +21,7 @@ CXXFLAGS = -g -Wall -m32
 CPPFLAGS = $(addprefix -I,../$(CODEDIR)/$(INCLUDEDIR))
 
 # Linker flags
-LDFLAGS = -lm -std=c++11 -m32 -pthread
+LDFLAGS = -lm -std=c++14 -m32 -pthread
 
 # Gather dependencies
 SOURCES = $(notdir $(wildcard ../$(CODEDIR)/$(SRCDIR)/*.cpp))
